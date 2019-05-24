@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { FormattedNumber } from "react-intl";
 
 const Property = props => {
@@ -28,7 +29,7 @@ const Property = props => {
               <FormattedNumber
                 value={property.listPrice}
                 currency="USD"
-                style="currency"
+                style={{curreny: "currency"}}
                 minimumFractionDigits={0}
                 maximumFractionDigits={0}
               />
@@ -75,4 +76,9 @@ const Property = props => {
   );
 };
 
+Property.propTypes = {
+  property: PropTypes.object.isRequired,
+  saveLocation: PropTypes.func.isRequired,
+  isSaved: PropTypes.bool
+};
 export default Property;

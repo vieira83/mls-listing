@@ -1,6 +1,6 @@
 export const storage = {
   getItem: function(key) {
-    const item = localStorage.getItem(key);
+    let item = localStorage.getItem(key);
 
     try {
       item = JSON.parse(item);
@@ -11,9 +11,5 @@ export const storage = {
 
   setItem: function(key, value) {
     localStorage.setItem(key, value);
-  },
-
-  removeItem: function(key) {
-    localStorage.removeItem(key);
   }
 };

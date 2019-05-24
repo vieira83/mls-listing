@@ -15,7 +15,7 @@ class Properties extends React.Component {
 
   handleSaveLocation = property => {
     const userId = Auth.getUser();
-    const { mlsId,mls: { status } } = property;
+    const { mlsId,mls: { status } } = property; 
 
     firebaseDB
       .ref("locations/" + mlsId)
@@ -50,7 +50,7 @@ class Properties extends React.Component {
 }
 
 Properties.propTypes = {
-  savedMlsId: PropTypes.number
+  properties: PropTypes.array.isRequired
 };
 
 export default Properties;

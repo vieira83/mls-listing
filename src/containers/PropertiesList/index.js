@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Properties from "../Properties";
 import Spinner from "../../components/Spinner";
 import { simplyrets } from "../../services/simplyretsService";
@@ -30,9 +29,5 @@ class PropertiesList extends React.Component {
     return <Spinner />;
   }
 }
-
-PropertiesList.propTypes = {
-  properties: PropTypes.array
-};
 
 export default PropertiesList;

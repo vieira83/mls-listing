@@ -29,7 +29,7 @@ const Property = props => {
               <FormattedNumber
                 value={property.listPrice}
                 currency="USD"
-                style={{curreny: "currency"}}
+                style={`currency`}
                 minimumFractionDigits={0}
                 maximumFractionDigits={0}
               />

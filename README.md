@@ -4,11 +4,10 @@
 The real estate listing app lists real estates houses with details obtnaied from the simplyreets trial test api. Every MLS list can be saved to firebase database under the mlsid with the userId . When the App loads inside the main component (App) we initialize firebase and get a the user from localStorage or set a new one.  
 
 The  React Real Estate Listing project is structured:
-- **components**: Contains all stateless components.
+- **components**: contains all stateless components.
 - **containers**: class or smart components. Every component or container has it’s own folder.
-- **shared folder** : contains reusable utils and functions such API, Auth and local storage.
-The Api is object literal containing a generic getAll method to fetch data for url. 
-- **Services**:  contains services to get data from an api endpoint. the simplyReets service gets the all properties data.
+- **shared folder** : contains reusable utils and functions such API, Auth and localStorage. 
+- **Services**:  contains component services such as get data from an api endpoint. the simplyReets service gets the all properties data.
 - **config**: configurations files such as firebase config.
 
 -  **CSS** :

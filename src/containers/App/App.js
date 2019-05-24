@@ -9,7 +9,6 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.firebase = null;
     this.state = {
       userId: null
     };

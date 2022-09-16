@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "firebase": "^6.0.4",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
